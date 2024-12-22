@@ -5,5 +5,5 @@ export interface Ipages {
     "per_page": number,
     "total": number,
     "total_pages": number,
-    "results": [Iuser]
+    "results": Iuser[]
 }
