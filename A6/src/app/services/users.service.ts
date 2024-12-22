@@ -55,7 +55,9 @@ export class UsersService {
         per_page: this.userPerPageList,
         total: nTotalUsers,
         total_pages: nTotalVisualPages,
-        results: ret
+        results: ret,
+        items: ret,
+        users: ret
       };
     } else if (n <= nTotalVisualPages) {
       console.log('Entering IF ELSE ----- so n<=nTotalVisualPages = true');
@@ -68,7 +70,9 @@ export class UsersService {
         per_page: this.userPerPageList,
         total: nTotalUsers,
         total_pages: nTotalVisualPages,
-        results: ret
+        results: ret,
+        items: ret,
+        users: ret
       };
     } else {
       console.log('Entering to the end of DB ---- n<=nTotalVisualPages = false');
@@ -81,7 +85,9 @@ export class UsersService {
         per_page: this.userPerPageList,
         total: nTotalUsers,
         total_pages: nTotalVisualPages,
-        results: ret
+        results: ret,
+        items: ret,
+        users: ret // Add the users property here
       };
     }
   }
@@ -124,5 +130,15 @@ export class UsersService {
    */
   deleteUserById(id: string): Promise<Iuser> {
     return firstValueFrom(this.httpClient.delete<Iuser>(this.apiUrl + id));
+  }
+
+  async shuffleUsersOnPage(pageNumber: number): Promise<Iuser[]> {
+    const pageData = await this.getPage(pageNumber);
+    return this.shuffleArray(pageData.results);
+  }
+
+  private shuffleArray(array: Iuser[]): Iuser[] {
+    // Your shuffle logic here
+    return array;
   }
 }
