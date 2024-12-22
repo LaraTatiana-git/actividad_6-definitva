@@ -1,0 +1,40 @@
+.btt-iconic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    background-color: var(--color-card-background);
+    color: #ffffff;
+    /* Blanco */
+    cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none;
+    outline: none;
+    width: 6rem;
+    height: 100%;
+    font-size: 11px;
+}
+
+.btt-iconic img,
+.btt-iconic svg {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+}
+
+.btt-iconic:hover {
+    background-color: var(--color-card-button-hover-background);
+    color: var(--color-card-button-hover-text);
+}
+
+.card_colors {
+    background-color: var(--color-card-background);
+    color: var(--color-card-text);
+}
+
+.card_name_colors {
+    background-color: var(--color-card-name-background);
+    color: var(--color-card-name-text);
+}

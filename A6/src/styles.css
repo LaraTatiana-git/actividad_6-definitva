@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+:root {
+
+    /* MAIN COLORS */
+    --color-main-background: #ffffff;
+    /* Blanco */
+    --color-main-text: #0000ff;
+    /* Azul */
+    --color-link: #1e90ff;
+    /* Azul Dodger */
+    --color-active-link: #87cefa;
+    /* Azul Cielo Claro */
+
+    /* LISTVIEW COLORS */
+    --color-listview-background: #ffffff;
+    /* Blanco */
+    --color-listview-text: #000000;
+    /* Negro */
+    --color-listview-button-next-previous-background: #1e90ff;
+    /* Azul Dodger */
+    --color-listview-button-next-previous-text: #ffffff;
+    /* Blanco */
+
+    --color-listview-button-hover-background: #87cefa;
+    /* Azul Cielo Claro */
+    --color-listview-button-hover-text: #000000;
+    /* Negro */
+
+    /* CARD COLORS */
+    --color-card-background: #1e90ff;
+    /* Azul Dodger */
+    --color-card-text: #ffffff;
+    /* Blanco */
+    --color-card-name-background: #00008b;
+    /* Azul Oscuro */
+    --color-card-name-text: #87cefa;
+    /* Azul Cielo Claro */
+    --color-card-button-text: #000000;
+    /* Negro */
+    --color-card-button-hover-background: #87cefa;
+    /* Azul Cielo Claro */
+    --color-card-button-hover-text: #000000;
+    /* Negro */
+
+    /* FORM COLORS */
+    --color-form-background: #00008b;
+    /* Azul Oscuro */
+    --color-form-text: #87cefa;
+    /* Azul Cielo Claro */
+    --color-form-inputs: #ffffff;
+    /* Blanco */
+}
+
+.nombre {
+    color: #ffffff;
+    /* Blanco */
+}
+
+.usuarios,
+.home,
+.nuevo-usuario {
+    color: #00008b;
+    /* Azul oscuro */
+}
+
+.btt {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-link);
+    color: var(--color-main-text);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.btt:hover {
+    background-color: var(--color-active-link);
+}
